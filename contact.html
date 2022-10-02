@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/all.css"> -->
+    <!-- <script src="https://kit.fontawesome.com/b188785c2a.js" crossorigin="anonymous"> -->
+
+    <!-- </script> -->
+<script src="https://kit.fontawesome.com/b188785c2a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+ <!-- icons added using www.fontawesome.com cdn    -->
+    <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp fa-lg"></i></a>
+    <a href="https://www.pinterest.com"><i class="fab  fa-pinterest"></i></a>
+    <!-- <a href="https://www.facebook.com"><i class="fab  fa-facebook-f"></i></a> -->
+    <a href="https://www.facebook.com"> <i class="fab fa-facebook"></i> </a>
+    
+    <h1>Enter Your Details</h1>
+
+    <form action="results.html" method="get" enctype="multipart/form-data" autocomplete="on">
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+        <div class="inputs">
+        <label for="Name">1. Name*:</label>
+        <input type="text" name="Name:" id="Name" placeholder="Name" required>
+        </div>
+        
+        <div class="inputs">
+            <label for="fatherName">2. Father Name*:</label>
+            <input type="text" name="Father Name:" id="fatherName" placeholder="Father's Name" required>
+        </div>
+        
+        <div>
+            <label for="pwd">3. Password*:</label>
+            <input type="password" name="Password" id="pwd" placeholder="password" required>
+        </div>
+
+        
+        <div>
+            <label for="age">4. Age: </label>
+            <input type="number" name="Age" id="age" min="1" max="100" step="0.1">
+
+        </div>
+        <div>
+            <label for="date" >5. Date of birth: </label>
+            <input type="date" id="date" name="DOB">
+        </div>
+        
+        <div>
+            <span>6. Gender: </span>
+            <label for="male" >Male</label>
+            <input type="radio" id="male" Name="Gender:" value="Male">
+
+            <label for="female" >Female</label>
+            <input type="radio" id="female" Name="Gender:" value="Female">
+
+        </div>
+        <br>
+        <div>
+            <span>7. Hobbies:</span>
+            
+            <label for="Studying">Studying</label>
+            <input type="checkbox" id="Studying" name="Hobbies:" value="Studying">
+
+            <label for="Driving">Driving</label>
+            <input type="checkbox" id="Driving" name="Hobbies:" value="Driving">
+        
+            <label for="Coding">Coding</label>
+            <input type="checkbox" id="Coding" name="Hobbies:" value="Coding">
+
+            <label for="Sleeping">Sleeping</label>
+            <input type="checkbox" id="Sleeping" name="Hobbies:" value="Sleeping">
+        </div>
+        <br>
+
+        <div>
+            <label for="eyeColor">8. EyeColor: </label>
+            <input type="color" id="eyeColor" name="Eye Color:">
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend><b>Contact Details</b></legend>
+        <div>
+            <label for="phone">9. Phone Number*:  </label>
+            <input type="tel" id="phone" name="Phone Number:" required>
+        </div>
+        <div>
+            <label for="email" >10.Email*: </label>
+        <input type="email" name="e-mail" id="email" placeholder="email-id" required>
+        </div>
+
+        <div>
+            <label for="Address">11.Home Address: </label>
+            <textarea id="Address" name="Complete Address: " placeholder="Enter Your Complete Address" ></textarea>
+       </div>
+       </fieldset>
+       <fieldset>
+        <legend><b>Other Details</b></legend>
+        <div>
+            <label for="educationalQualification">12. Educational Qualification:</label>
+            <select name="Educational Qualification:" id="educationalQualification">
+                <option value="underGraduate">UnderGraduate</option>
+                <option value="Graduate">Graduate</option>
+                <option value="postGraduate">Post Graduate</option>
+                <option value="Doctrate">Doctrate</option>
+                <option value="postDoctrate">Post Doctrate</option>
+                
+            </select>
+        </div>
+        
+        <div>
+            
+            <label for="Bio"><pre>
+13. Write something about 
+    you in less than 100 words:</pre></label>
+            <textarea id="Bio" name="More Details:" placeholder="more about me" ></textarea>
+        </div>
+
+            <div>
+                <label for="file">14. Upload Your Resume: </label>
+                <input type="file" id="file" name="file">
+            </div>
+            
+            <input type="hidden" value="hi" name="hidden">
+           <hr>
+           
+           
+           
+           <div style="border:1px dotted black; width: 400px;margin: 20px;">
+            <label for="range">Risk Taker(0-10):</label>
+            <input type="text" style="width: 20px;" id="put" name="Range:" value="0" >
+            <input type="range" id="get" min="0" max="10" onchange="fetch()" step="1" >
+            
+            </div>
+        <hr>
+        <div style="border:1px dotted red">
+            <label>Progress Bar:</label>
+        <progress value="2" max="10"></progress>
+        </div>
+        <hr>
+        <div>
+            <label>Disk C:</label>
+            <meter value="1" min="0" max="10" low="2" high="7">
+
+            </meter>
+        </div>
+        
+        
+        </fieldset>
+        <div>
+            <label>Preffered Browser:</label>
+            <input list="browsers" name="browsers">
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Edge"></option>
+                <option value="Firefox"></option>
+            </datalist>
+            
+            <input type="button" value="click me" onclick= "alert('Why You have Clicked Me!!!') ">
+        </div>    
+        
+        <div>
+            
+            
+
+            <button type="submit" onclick="alert('Kia to bhi hona tumakoo')">Submit</button>
+            <button type="reset">Cancel</button>
+            
+        </div>
+
+    </form>
+    <script>
+       
+        function mymsg(){
+            console.log("hi");
+        }
+
+        function fetch(){
+            var x=document.getElementById("get").value;
+            document.getElementById("put").value=x;
+        }
+    </script>
+    
+</body>
+</html>

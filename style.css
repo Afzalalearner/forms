@@ -1,0 +1,52 @@
+
+*{
+    padding:0px;
+    margin:1px;
+    color: #6d2929;
+}
+/* body{ 
+    background-image: url('/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}*/
+form{
+    margin:5px;
+}
+.signup{
+    text-align: right;
+    margin-right:10px;
+}
+
+h1{
+    background-color:#888;
+    text-align: center;
+}
+
+textarea{
+    width:400px;
+    height:100px;
+    vertical-align: middle;
+    padding: 3px;
+}
+
+    pre{
+        display: inline-block;
+    }
+input{
+    padding:5px;
+    margin: 5px;
+}
+
+button{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#Studying ,#Coding, #Sleeping ,#Driving, #male , #female{
+    /* padding: 5px; */
+    margin-left: 1px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
